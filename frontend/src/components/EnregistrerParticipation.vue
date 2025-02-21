@@ -146,45 +146,42 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* --- Mise en forme générale --- */
 .card {
-  max-width: 420px;
+  max-width: 400px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #fff4e5;
-  border-radius: 14px;
-  box-shadow: 0 5px 15px rgba(230, 81, 0, 0.3);
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h2 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1.3rem;
-  color: #b53d00;
+  font-size: 1.25rem;
+  color: #444;
 }
 
-/* --- Formulaire --- */
 .participation-form {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1rem;
 }
 
 .label {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  color: #8a2c00;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #ff7c3c;
 }
 
 .select, .input {
-  padding: 0.55rem;
-  border: 1px solid #ff5722;
-  border-radius: 8px;
-  font-size: 0.92rem;
-  background: #fff;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #f8f8f8;
 }
 
-/* Slider */
 .slider-container {
   display: flex;
   align-items: center;
@@ -194,61 +191,45 @@ h2 {
 .slider {
   flex: 1;
   -webkit-appearance: none;
-  height: 5px;
-  background: #ffab91;
-  border-radius: 3px;
+  height: 4px;
+  background: #e2a329;
+  border-radius: 2px;
   outline: none;
   cursor: pointer;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background: #e65100;
+  background: #ff9800;
   cursor: pointer;
   border: 2px solid #fff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}
-.slider::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #e65100;
-  cursor: pointer;
-  border: 2px solid #fff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 
-/* Valeur du slider */
-.slider-value {
-  width: 42px;
-  text-align: center;
-  font-weight: 500;
-}
-
-/* --- Bouton --- */
 .btn-submit {
-  padding: 0.65rem 1.1rem;
-  background-color: #ff5722;
+  padding: 0.6rem 1rem;
+  background-color: #ff9800;
   color: #fff;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.15s ease-in-out, background-color 0.2s ease-in-out;
-  font-size: 0.92rem;
-}
-.btn-submit:hover {
-  background-color: #e64a19;
-  transform: scale(1.03);
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.9rem;
 }
 
-/* --- Feedback --- */
+.btn-submit:hover {
+  background-color: #e68900;
+}
+
 .error {
   margin-top: 1rem;
   color: #d32f2f;
 }
+
 .success {
   margin-top: 1rem;
   color: #388e3c;
